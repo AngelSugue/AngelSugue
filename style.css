@@ -1,0 +1,293 @@
+:root {
+    --forest: #123c2b;
+    --deep-green: #0b241a;
+    --green: #26734d;
+    --sage: #a8c5a0;
+    --mint: #e8f1e6;
+    --white: #ffffff;
+    --text: #24352b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f3;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+header {
+    background: var(--deep-green);
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: var(--sage);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--sage);
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #0b241a, #20583d);
+    color: white;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: #609c72;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero .eyebrow {
+    color: var(--sage);
+}
+
+h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+h1 span {
+    color: var(--sage);
+}
+
+h2 {
+    color: var(--forest);
+    font-size: 2rem;
+    margin-bottom: 22px;
+}
+
+.hero h2 {
+    color: var(--sage);
+    font-size: 1.35rem;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.profile-photo {
+    width: 280px;
+    height: 340px;
+    object-fit: cover;
+    object-position: center top;
+    border: 5px solid var(--sage);
+    border-radius: 140px 140px 25px 25px;
+    box-shadow: 0 15px 40px #00000040;
+}
+
+.button {
+    display: inline-block;
+    background: var(--sage);
+    color: var(--deep-green);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: white;
+}
+
+section:not(.hero) {
+    padding: 75px 10%;
+}
+
+#about {
+    background: white;
+}
+
+#about h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: var(--forest);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #dce8d9;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 6px 20px #123c2b0d;
+}
+
+.card h3 {
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.card a,
+#contact a {
+    color: var(--green);
+    overflow-wrap: anywhere;
+}
+
+#contact {
+    background: var(--mint);
+}
+
+#contact form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #b8cbb4;
+    border-radius: 7px;
+    font: inherit;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--green);
+}
+
+#form-status {
+    margin-top: 10px;
+}
+
+footer {
+    background: var(--deep-green);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+#theme-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 50%;
+    background: var(--green);
+    color: white;
+    cursor: pointer;
+    z-index: 101;
+}
+
+body.dark-theme {
+    background: #101b15;
+    color: #e8f1e6;
+}
+
+body.dark-theme section:not(.hero) {
+    background: #17281e;
+}
+
+body.dark-theme h2,
+body.dark-theme #about h3 {
+    color: var(--sage);
+}
+body.dark-theme #about,
+body.dark-theme #contact {
+    background: #17281e;
+}
+
+body.dark-theme #contact a,
+body.dark-theme .card a {
+    color: var(--sage);
+}
+
+body.dark-theme .card {
+    background: #203629;
+    border-color: #365342;
+}
+
+body.dark-theme input,
+body.dark-theme textarea {
+    background: #203629;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 16px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .profile-photo {
+        width: 210px;
+        height: 250px;
+    }
+
+    section:not(.hero) {
+        padding: 55px 7%;
+    }
+}

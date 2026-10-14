@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Faye Q. Sugue | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">AngelSugue</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+                <h1>Hi, I'm <span>Angel Faye Q. Sugue</span></h1>
+                <h2>IT Student | Aspiring Web Developer</h2>
+                <p>
+                    I am a second-year Information Technology student
+                    interested in programming, web development, and technology.
+                </p>
+                <a class="button" href="#projects">Explore My Portfolio</a>
+            </div>
+            <img src="C:\Users\Frances\OneDrive\Documents\GitHub\AngelSugue.github.io\profile.jpg" 
+                 alt="Photo of Angel Faye Q. Sugue" 
+                 class="profile-photo">
+        </section>
+
+        <section id="about">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Angel Faye Q. Sugue, a second-year college
+                student at Nueva Vizcaya State University - Bambang Campus.
+                I am taking Bachelor of Science in Information Technology.
+                My goal is to improve my programming skills and create
+                useful and creative websites.
+            </p>
+            <div class="card-grid">
+    <article class="card">
+        <h3>My Hobbies</h3>
+        <p>Making art · Dancing · Singing · Watching movies and series · Playing online games</p>
+    </article>
+    <article class="card">
+        <h3>My Interests</h3>
+        <p>Web development · Programming · Creative design · Technology</p>
+    </article>
+    <article class="card">
+        <h3>Career Goals</h3>
+        <p>To become a professional web developer who builds useful, creative, and user-friendly websites.</p>
+    </article>
+</div>
+</section>
+
+        <section id="skills">
+            <p class="eyebrow">WHAT I AM LEARNING</p>
+            <h2>My Skills</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Technical Skills</h3>
+                    <p>Basic web development and basic programming</p>
+                </article>
+                <article class="card">
+                    <h3>Programming Languages</h3>
+                    <p>Java, HTML, CSS, and SQL</p>
+                </article>
+                <article class="card">
+                    <h3>Tools & Technologies</h3>
+                    <p>VS Code, Notepad++, GitHub, and MySQL</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects">
+            <p class="eyebrow">MY WORK</p>
+            <h2>My Projects</h2>
+            <div id="project-list" class="card-grid">
+    <article class="card">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio built with HTML, CSS, and JavaScript.</p>
+        <a href="https://github.com/AngelSugue/AngelSugue.github.io" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </article>
+</div>
+            <article class="card">
+    <h3>My Login Page</h3>
+    <p>(HTML, CSS).</p>
+    <a href="file:///C:/Users/Frances/OneDrive/Documents/Final%20Loginpage/Loginpage.html" target="_blank" rel="noopener noreferrer">View Project</a>
+</article>
+        </section>
+
+        <section id="contact">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:angelsugue8@gmail.com">angelsugue8@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/AngelSugue" target="_blank" rel="noopener noreferrer">github.com/AngelSugue</a></p>
+
+            <form id="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <button class="button" type="submit">Send Message</button>
+                <p id="form-status" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Angel Faye Q. Sugue | Student Portfolio</p>
+    </footer>
+
+    <button id="theme-toggle" aria-label="Toggle light and dark theme">☀ / ☾</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
